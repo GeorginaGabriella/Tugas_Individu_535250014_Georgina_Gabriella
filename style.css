@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -25,10 +26,12 @@ article {
     padding: 30px;
     max-width: 800px;
     margin: auto;
+    background-color: #ffffff;
 }
 
 article h2 {
     font-size: 28px;
+    color:#782190;
 }
 
 article p {
@@ -38,5 +41,6 @@ article p {
 footer {
     padding: 25px;
     text-align: center;
-    background: #eeeeee;
+    background: #ba61da;
+    color: white;
 }
