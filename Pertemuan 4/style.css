@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+.profile-container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 24px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    border-radius: 20px;
+    padding: 28px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.10);
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e2e8f0;
+}
+
+.profile-content {
+    text-align: center;
+}
+
+.label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+.contact {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #475569;
+    word-break: break-word;
+}
+
+.contact span {
+    margin: 0 5px;
+    color: #94a3b8;
+}
+
+.location {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 4px;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background: #334155;
+    margin: 22px auto;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 19px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #475569;
+    text-align: left;
+}
+
+.skills {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.skills span {
+    background: #f1f5f9;
+    color: #334155;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+/* TABLET
+   576px - 991px
+*/
+
+@media (min-width: 576px) {
+
+    .profile-container {
+        padding: 40px 30px;
+    }
+
+    .profile-card {
+        max-width: 700px;
+        padding: 40px;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .profile-photo {
+        flex: 0 0 190px;
+    }
+
+    .profile-photo img {
+        width: 190px;
+        height: 190px;
+    }
+
+    .profile-content {
+        flex: 1;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .divider {
+        margin: 22px 0;
+    }
+
+    .skills {
+        justify-content: flex-start;
+    }
+}
+
+
+/* DESKTOP
+   992px ke atas
+*/
+
+@media (min-width: 992px) {
+
+    .profile-container {
+        padding: 60px;
+    }
+
+    .profile-card {
+        max-width: 900px;
+        padding: 50px;
+        gap: 60px;
+    }
+
+    .profile-photo {
+        flex: 0 0 250px;
+    }
+
+    .profile-photo img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .profile-content {
+        max-width: 520px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .description {
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .skills span {
+        font-size: 13px;
+        padding: 9px 14px;
+    }
+}
