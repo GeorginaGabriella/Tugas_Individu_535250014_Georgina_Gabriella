@@ -161,11 +161,6 @@ h2 {
     }
 }
 
-
-/* DESKTOP
-   992px ke atas
-*/
-
 @media (min-width: 992px) {
 
     .profile-container {
